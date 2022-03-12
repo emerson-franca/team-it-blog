@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> should render menus Home 1`] = `
+<header
+  class="sc-bdvvtL dpBKGf"
+>
+  <div
+    class="sc-gsDKAQ bEzAQl"
+  >
+    <img
+      class="sc-dkPtRN"
+      src="/images/logo.svg"
+    />
+    <nav
+      class="sc-hKwDye"
+    >
+      <a
+        class="sc-eCImPb fjOSiU"
+        data-testid="link"
+      >
+        Home
+      </a>
+      <a
+        class="sc-eCImPb bDRzrt"
+        data-testid="link"
+      >
+        Posts
+      </a>
+    </nav>
+  </div>
+</header>
+`;
