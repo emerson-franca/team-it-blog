@@ -1,8 +1,8 @@
-import { PostProps } from "../../@types/Post";
+import { PostType } from "../../@types/Post";
 import { Container, PostDate, PostDescription, PostTitle } from "./styles";
 import Link from "next/link";
 
-const Post: React.FC<PostProps> = ({
+const Post: React.FC<PostType> = ({
   slug,
   title,
   description,
