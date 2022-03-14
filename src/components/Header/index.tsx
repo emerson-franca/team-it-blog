@@ -10,7 +10,7 @@ const Header = () => {
     <Container>
       <Wrapper>
         <Link href="/">
-          <Logo src="/images/logo.svg" />
+          <Logo src="/images/logo.svg" alt="Team.it logo" />
         </Link>
 
         <Menu>
