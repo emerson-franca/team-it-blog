@@ -18,5 +18,7 @@ export const sendComment = async (commentObj: CommentObjType) => {
       parent_id: null,
       date: generateTodayStringDate(),
     });
-  } catch (error) {}
+  } catch (error) {
+    console.log(error);
+  }
 };
