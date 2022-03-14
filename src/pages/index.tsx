@@ -1,6 +1,5 @@
-import Header from "../components/Header";
-import { Title } from "../styles/style";
+import Home from "../templates/Home";
 
-export default function Home() {
-  return <Header />;
+export default function Index() {
+  return <Home />;
 }
