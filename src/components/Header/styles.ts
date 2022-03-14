@@ -20,7 +20,9 @@ export const Wrapper = styled.div`
   }
 `;
 
-export const Logo = styled.img``;
+export const Logo = styled.img`
+  cursor: pointer;
+`;
 
 export const Menu = styled.nav``;
 

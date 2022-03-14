@@ -1,18 +1,33 @@
 import React from "react";
+import Link from "next/link";
+import { useRouter } from "next/router";
 import { Container, Logo, Menu, MenuItem, Wrapper } from "./styles";
 
 const Header = () => {
+  const router = useRouter();
+
   return (
     <Container>
       <Wrapper>
-        <Logo src="/images/logo.svg" />
+        <Link href="/">
+          <Logo src="/images/logo.svg" />
+        </Link>
+
         <Menu>
-          <MenuItem data-testid="link" isActive>
-            Home
-          </MenuItem>
-          <MenuItem data-testid="link" isActive={false}>
-            Posts
-          </MenuItem>
+          <Link href="/">
+            <MenuItem data-testid="link" isActive={router.pathname === "/"}>
+              Home
+            </MenuItem>
+          </Link>
+
+          <Link href="posts">
+            <MenuItem
+              data-testid="link"
+              isActive={router.pathname === "/posts"}
+            >
+              Posts
+            </MenuItem>
+          </Link>
         </Menu>
       </Wrapper>
     </Container>
