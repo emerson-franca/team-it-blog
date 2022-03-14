@@ -1,8 +1,8 @@
 import { fetchPosts } from "../services/posts";
-import Posts from "../templates/Posts";
+import PostList from "../templates/PostList";
 
 export default function PostsWrapper({ posts }) {
-  return <Posts posts={posts} />;
+  return <PostList posts={posts} />;
 }
 
 export async function getStaticProps() {

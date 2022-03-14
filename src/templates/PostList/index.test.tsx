@@ -1,5 +1,5 @@
 import { screen } from "@testing-library/react";
-import Posts from ".";
+import PostList from ".";
 import { renderTestComponent } from "../../utils";
 
 const POST_MOCK = [
@@ -24,9 +24,9 @@ const POST_MOCK = [
   },
 ];
 
-describe("<Posts />", () => {
+describe("<PostList />", () => {
   beforeEach(() => {
-    renderTestComponent(<Posts posts={POST_MOCK} />);
+    renderTestComponent(<PostList posts={POST_MOCK} />);
   });
 
   it("should render all posts", () => {
