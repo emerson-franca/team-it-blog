@@ -10,6 +10,7 @@ export const Container = styled.article`
 export const CommentAvatar = styled.div`
   height: 50px;
   width: 50px;
+  min-width: 50px;
   border-radius: 50%;
   background: ${({ theme }) => theme.colors.orange};
   display: flex;

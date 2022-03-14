@@ -5,9 +5,16 @@ export const Container = styled.main`
   margin: 0 auto;
   padding-top: 80px;
 
-  @media (max-width: 768px) {
+  @media (max-width: ${({ theme }) => theme.breakPoints.tablet}) {
     margin: 0 60px;
   }
+`;
+
+export const PostPageBackLink = styled.span`
+  color: ${({ theme }) => theme.colors.lightGrey};
+  margin-bottom: 30px;
+  cursor: pointer;
+  display: inline-block;
 `;
 
 export const PostPageTitle = styled.h1`

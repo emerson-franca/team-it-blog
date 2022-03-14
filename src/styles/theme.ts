@@ -9,6 +9,9 @@ const theme = {
     mediumGrey: "#323238",
     lightGrey: "#A8A8B3",
   },
+  breakPoints: {
+    tablet: "768px",
+  },
 };
 
 export default theme;

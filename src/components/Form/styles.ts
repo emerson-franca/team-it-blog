@@ -17,6 +17,11 @@ export const UserNameInput = styled.input`
   height: 40px;
   border-radius: 4px;
   padding-left: 8px;
+  width: 300px;
+
+  @media (max-width: ${({ theme }) => theme.breakPoints.tablet}) {
+    width: 100%;
+  }
 `;
 
 export const UserCommentTextarea = styled.textarea`

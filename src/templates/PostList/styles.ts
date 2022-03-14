@@ -10,4 +10,8 @@ export const Container = styled.main`
 export const PostsWrapper = styled.section`
   max-width: 680px;
   margin: 0 auto;
+
+  @media (max-width: ${({ theme }) => theme.breakPoints.tablet}) {
+    margin: 0 50px;
+  }
 `;
