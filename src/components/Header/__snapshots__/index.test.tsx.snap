@@ -8,6 +8,7 @@ exports[`<Header /> should render menus Home 1`] = `
     class="sc-gsDKAQ bEzAQl"
   >
     <img
+      alt="Team.it logo"
       class="sc-dkPtRN DXAXM"
       src="/images/logo.svg"
     />
