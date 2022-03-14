@@ -21,9 +21,10 @@ export default createGlobalStyle`
 
 
   body {
-    background: ${(props) => props.theme.colors.green};
-    color: ${(props) => props.theme.colors.text}; 
+    color: #ffffff; 
     font: 400 16px Roboto, sans-serif;
+    height: calc(100vh - 5rem);
+    background-color: ${({ theme }) => theme.colors.black}
   }
 
 `;
