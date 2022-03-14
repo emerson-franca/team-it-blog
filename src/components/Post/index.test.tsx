@@ -18,13 +18,13 @@ describe("<Post />", () => {
   });
 
   it("should render the props date", () => {
-    const description = screen.getByText("2016-11-29");
-    expect(description).toBeInTheDocument();
+    const date = screen.getByText("2016-11-29");
+    expect(date).toBeInTheDocument();
   });
 
   it("should render the props title", () => {
-    const description = screen.getByText("Blog post #10");
-    expect(description).toBeInTheDocument();
+    const title = screen.getByText("Blog post #10");
+    expect(title).toBeInTheDocument();
   });
 
   it("should render the props description", () => {
