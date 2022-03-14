@@ -8,7 +8,7 @@ exports[`<Header /> should render menus Home 1`] = `
     class="sc-gsDKAQ bEzAQl"
   >
     <img
-      class="sc-dkPtRN"
+      class="sc-dkPtRN DXAXM"
       src="/images/logo.svg"
     />
     <nav
