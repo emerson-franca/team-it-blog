@@ -4,6 +4,7 @@ import Comment from "../../components/Comment";
 import {
   Container,
   PostPageAuthor,
+  PostPageBackLink,
   PostPageComments,
   PostPageCommentsTitle,
   PostPageContent,
@@ -11,6 +12,7 @@ import {
   PostPageTitle,
 } from "./styles";
 import Form from "../../components/Form";
+import Link from "next/link";
 
 type PostPageTemplateProps = {
   post: PostType;
@@ -25,6 +27,9 @@ const PostPageTemplate: React.VFC<PostPageTemplateProps> = ({
 
   return (
     <Container>
+      <Link href="/posts">
+        <PostPageBackLink>← Back</PostPageBackLink>
+      </Link>
       <PostPageTitle>{title}</PostPageTitle>
       <PostPageDate>{publish_date}</PostPageDate>
       <PostPageAuthor>By: {author}</PostPageAuthor>

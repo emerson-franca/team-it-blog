@@ -13,16 +13,30 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+
+  @media (max-width: ${({ theme }) => theme.breakPoints.tablet}) {
+    padding-top: 2rem;
+    flex-direction: column;
+    height: 100vh;
+  }
 `;
 
 export const Img = styled.img`
   max-width: 100%;
   height: 520px;
+
+  @media (max-width: ${({ theme }) => theme.breakPoints.tablet}) {
+    width: 100%;
+    height: 400px;
+  }
 `;
 
 export const HeroSection = styled.section`
   max-width: 680px;
+
+  @media (max-width: ${({ theme }) => theme.breakPoints.tablet}) {
+    margin-bottom: 50px;
+  }
 `;
 
 export const HeroMinorText = styled.span`
@@ -42,6 +56,10 @@ export const HeroMessage = styled.h1`
   }
 `;
 
+export const ButtonLink = styled.a`
+  text-decoration: none;
+`;
+
 export const HeroButton = styled.button`
   cursor: pointer;
   display: block;
@@ -53,4 +71,8 @@ export const HeroButton = styled.button`
   color: #ffffff;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-top: 5rem;
+
+  @media (max-width: ${({ theme }) => theme.breakPoints.tablet}) {
+    margin: 2rem auto;
+  }
 `;

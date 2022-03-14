@@ -1,4 +1,5 @@
 import {
+  ButtonLink,
   Container,
   HeroButton,
   HeroMessage,
@@ -18,7 +19,14 @@ export default function Home() {
             News about the <span>Team.it</span> Test
           </HeroMessage>
           <HeroMinorText>Hire me =)</HeroMinorText>
-          <HeroButton aria-label="button-hire-me">Click to hire me</HeroButton>
+          <ButtonLink
+            href="https://www.linkedin.com/in/emerson-fran%C3%A7a-b5179179/"
+            target="_blank"
+          >
+            <HeroButton aria-label="button-hire-me">
+              Click to hire me
+            </HeroButton>
+          </ButtonLink>
         </HeroSection>
         <Img src="images/womanIllustration.svg" alt="Woman coding" />
       </Wrapper>
