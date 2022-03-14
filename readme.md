@@ -2,6 +2,14 @@
 
 Hello! This is my [Team.it](https://team-it.pt/#teamit) blog test.
 
+How to use:
+
+Yarn api to start the JSON SERVER api
+
+Yarn dev to start the code
+
+Yarn test to run all tests
+
 in this test, i cover some points like:
 
 - Architeture organization
